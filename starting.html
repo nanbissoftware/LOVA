@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Üsküdar Belediyesi</title>
+    <!-- Meta End-->
+
+    <!-- Favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest"> -->
+    <!-- Favicon End -->
+
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://psstl.esri.com/loop-1.1.0/css/loop.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" rel="stylesheet">
+    <link href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" rel="stylesheet">
+    <link href="css/datapicker.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Links End -->
+
+</head>
+
+<body>
+
+    <div class="container pt50 pb50">
+        <div class="row">
+            <div class="col-lg-12 mb30">
+                <h1>Form Elemanları</h1>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Buttons</h4>
+            </div>
+
+            <div class="col-lg-1">
+                <button class="button button-primary"><i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-secondary"><i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-orange"><i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-danger"><i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-success"><i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-dark"><i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-light"> <i class="nb-plus"></i>Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="button button-light disabled"> <i class="nb-plus"></i>Button</button>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Button Text</h4>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-primary">Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-secondary">Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-orange">Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-danger">Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-success">Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-dark">Button</button>
+            </div>
+            <div class="col-lg-1">
+                <button class="text-button text-light disabled">Button</button>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Textbox</h4>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Text Input
+                    </label>
+                    <div class="input-style">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Input Focus (bu işlemledeki .focus clası işlemsizdir)
+                    </label>
+                    <div class="input-style focus">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Text Tolltip
+                        <button type="button" data-container="body" data-toggle="popover" data-placement="right"
+                            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                            <i class="nb-help"></i>
+                        </button>
+                    </label>
+                    <div class="input-style closed">
+                        <input type="text">
+                        <button><i class="nb-close"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Text Input Disabled
+                    </label>
+                    <div class="input-style">
+                        <input disabled type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Text Input Icon
+                    </label>
+                    <div class="input-style treeDot">
+                        <input type="text">
+                        <button><i class="nb-sea"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Inout Datepicker
+                        <button type="button" data-container="body" data-toggle="popover" data-placement="right"
+                            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                            <i class="nb-help"></i>
+                        </button>
+                    </label>
+                    <div class="input-style calendar closed">
+                        <input type="text" data-toggle="datepicker" placeholder="28.12.2020">
+                        <i class="nb-calendar"></i>
+                        <button><i class="nb-close"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Input Number
+                    </label>
+                    <div class="input-style">
+                        <input type="number" value="1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Time Picker
+                    </label>
+                    <div class="input-style">
+                        <input class="timePicker" type="text" placeholder="00:00">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Text Input Requrid
+                    </label>
+                    <div class="input-style">
+                        <input type="text" value="345432432423">
+                        
+                    </div>
+                    <div class="alert alert-danger rounded">
+                        Lütfen bu alanı doldurun.
+                    </div>
+                    <div class="alert alert-warning rounded">
+                        Eksik bilgi girdiniz.
+                    </div>
+                    <div class="alert alert-success rounded">
+                        Bilgileri doğrulandı
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Select</h4>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Selectbox
+                    </label>
+                    <div class="input-style">
+                        <select name="" id="">
+                            <option value="">Seçiniz</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="">
+                        Selectbox Disabled
+                    </label>
+                    <div class="input-style">
+                        <select name="" id="" disabled>
+                            <option value="">Seçiniz</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Multi Select</h4>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="">
+                        Multi Select
+                    </label>
+                    <div class="input-style w-100">
+                        <select class="js-choice" multiple>
+                            <option value="Sindh">Sindh</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Balochistan">Balochistan</option>
+                            <option value="Fata">Fata</option>
+                            <option value="Federal Capital Territory">Federal Capital Territory</option>
+                            <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="">
+                        Multi Select Disabled
+                    </label>
+                    <div class="input-style w-100">
+                        <select class="js-choice2" multiple disabled>
+                            <option value="Sindh">Sindh</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Balochistan">Balochistan</option>
+                            <option value="Fata">Fata</option>
+                            <option value="Federal Capital Territory">Federal Capital Territory</option>
+                            <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Textarea</h4>
+            </div>
+
+
+
+            <div class="col-lg-6">
+                <div class="form-group mb40">
+                    <label for="">
+                        Textarea
+                    </label>
+                    <div class="input-style">
+                        <textarea name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group mb40">
+                    <label for="">
+                        Textarea Disabled
+                    </label>
+                    <div class="input-style">
+                        <textarea disabled name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>DropDown</h4>
+            </div>
+            <div class="col-lg-2 actions">
+                <div class="dropdown-global drop-left">
+                    <a class="dropdown-toggle button w-100" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DropDown
+                        <i class="nb-small-down" style="margin-left: auto;"></i>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 actions">
+                <div class="dropdown-global drop-left">
+                    <a class="dropdown-toggle button button-primary w-100" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DropDown
+                        <i class="nb-small-down" style="margin-left: auto;"></i>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 actions">
+                <div class="dropdown-global disabled drop-left">
+                    <a class="dropdown-toggle button button-primary w-100" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DropDown
+                        <i class="nb-small-down" style="margin-left: auto;"></i>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                        <a class="dropdown-item" href="#">Diğer Menü</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Chekbox </h4>
+            </div>
+
+            <div class="col-lg-1">
+                <div class="check-group">
+                    <label for="check01" class="checkbox">
+                        <input type="checkbox" id="check01" checked>
+                        <span>Chekbox</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="check-group">
+                    <label for="check02" class="checkbox">
+                        <input type="checkbox" id="check02" checked>
+                        <span>Chekbox</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="check-group">
+                    <label for="check03" class="checkbox">
+                        <input type="checkbox" id="check03" disabled>
+                        <span>Chekbox Disabled</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Switch Box </h4>
+            </div>
+            <div class="col-lg-1">
+                <div class="switch-group">
+                    <label for="switch01" class="switchbox">
+                        <input type="checkbox" id="switch01">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="switch-group">
+                    <label for="switch02" class="switchbox">
+                        <input type="checkbox" id="switch02" checked>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="switch-group">
+                    <label for="switch03" class="switchbox">
+                        <input type="checkbox" id="switch03" disabled>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-12 mt30 mb30">
+                <h4>Radio </h4>
+            </div>
+            <div class="col-lg-4">
+                <div class="check-group">
+                    <label for="radio01" class="radio mr15">
+                        <input type="radio" id="radio01" name="radio" checked>
+                        <span>Radio 01</span>
+                    </label>
+                    <label for="radio02" class="radio mr15">
+                        <input type="radio" id="radio02" name="radio">
+                        <span>Radio 02</span>
+                    </label>
+                    <label for="radio03" class="radio mr15">
+                        <input type="radio" id="radio03" name="radio" disabled>
+                        <span>Radio 02</span>
+                    </label>
+                </div>
+            </div>
+
+            
+
+
+
+            <div class="col-lg-12 mb30 mt30">
+                <h4>Table</h4>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="table-responsive h-auto beyan-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Bina i.nb-up-arrow </th>
+                                <th>İş Yeri</th>
+                                <th>Bedelsiz</th>
+                                <th>Muhatab No</th>
+                                <th>Muhatab</th>
+                                <th>Servis</th>
+                                <th>E. Dön</th>
+                                <th>2018</th>
+                                <th>Blok</th>
+                                <th>Kapı</th>
+                                <th>Daire</th>
+                                <th>Mük. Beş. Tar.</th>
+                                <th>Beyan Tarihi</th>
+                                <th>Mahalle</th>
+                                <th>Sokak</th>
+                                <th>Pafta</th>
+                                <th>Ada</th>
+                                <th>Parsel</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>234234234</td>
+                                <td>Bina</td>
+                                <td>
+                                    <label for="check01" class="checkbox auto">
+                                        <input type="checkbox" id="check01" checked>
+                                        <span class="mr0"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="check02" class="checkbox auto">
+                                        <input type="checkbox" id="check02" checked>
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>53453</td>
+                                <td>Hali̇l Barut</td>
+                                <td>Emlak Vergi̇si̇</td>
+                                <td>2018</td>
+                                <td>2018</td>
+                                <td>-</td>
+                                <td>22</td>
+                                <td>-</td>
+                                <td>1.1.1976</td>
+                                <td>13.03.2002</td>
+                                <td>Kuleli̇ Mh</td>
+                                <td>Albay Üçer</td>
+                                <td>139</td>
+                                <td>914</td>
+                                <td>26 <a href="#"> <i class="nb-edit"></i> </a></td>
+                            </tr>
+                            <tr class="open">
+                                <td>234234234</td>
+                                <td>Bina</td>
+                                <td>
+                                    <label for="check01" class="checkbox auto">
+                                        <input type="checkbox" id="check01" checked>
+                                        <span class="mr0"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="check02" class="checkbox auto">
+                                        <input type="checkbox" id="check02" checked>
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>53453</td>
+                                <td>Hali̇l Barut</td>
+                                <td>Emlak Vergi̇si̇</td>
+                                <td>2018</td>
+                                <td>2018</td>
+                                <td>-</td>
+                                <td>22</td>
+                                <td>-</td>
+                                <td>1.1.1976</td>
+                                <td>13.03.2002</td>
+                                <td>Kuleli̇ Mh</td>
+                                <td>Albay Üçer</td>
+                                <td>139</td>
+                                <td>914</td>
+                                <td>26 <a href="#"> <i class="nb-edit"></i> </a></td>
+                            </tr>
+                            <tr class="closed">
+                                <td>234234234</td>
+                                <td>Bina</td>
+                                <td>
+                                    <label for="check01" class="checkbox auto">
+                                        <input type="checkbox" id="check01" checked>
+                                        <span class="mr0"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="check02" class="checkbox auto">
+                                        <input type="checkbox" id="check02" checked>
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>53453</td>
+                                <td>Hali̇l Barut</td>
+                                <td>Emlak Vergi̇si̇</td>
+                                <td>2018</td>
+                                <td>2018</td>
+                                <td>-</td>
+                                <td>22</td>
+                                <td>-</td>
+                                <td>1.1.1976</td>
+                                <td>13.03.2002</td>
+                                <td>Kuleli̇ Mh</td>
+                                <td>Albay Üçer</td>
+                                <td>139</td>
+                                <td>914</td>
+                                <td>26 <a href="#"> <i class="nb-edit"></i> </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-foot">
+                    <div class="left">
+                        <ul class="list">
+                            <li class="selected"><a href="#">10</a></li>
+                            <li><a href="#">25</a></li>
+                            <li><a href="#">50</a></li>
+                            <li><a href="#">100</a></li>
+                        </ul>
+                    </div>
+                    <div class="middle">
+                        <p class="text-secondary">
+                            Toplam Listenen Sonuç : <strong>32.324</strong>
+                        </p>
+                    </div>
+
+                    <div class="right">
+                        <div class="actions">
+                            <a href="#" class="closed">
+                                Açık Beyan
+                            </a>
+                            <a href="#" class="open">
+                                Kapalı Beyan
+                            </a>
+                        </div>
+                        <ul class="list">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mb30 mt30">
+                <h4>Tab Panel</h4>
+            </div>
+            <div class="col-lg-12">
+                <ul class="tab-divider">
+                    <li class="active"><a href="javascript:;" data-toggle-target=".tab-content-1">Tab #01</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-2">Tab #02</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-3">Tab #02</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-4">Tab #03</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-5">Tab #04</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-6">Tab #05</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-7">Tab #06</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-8">Tab #07</a></li>
+                    <li><a href="javascript:;" data-toggle-target=".tab-content-9">Tab #08</a></li>
+                </ul>
+
+                <div class="tab-content mt15">
+                    <div class="item-content tab-content-1 p-3 border-dark rounded">
+                        <p>
+                            #01 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos iusto aliquid
+                            est deleniti aspernatur ab a vitae culpa, recusandae cupiditate magnam exercitationem eaque
+                            debitis voluptatem alias eveniet illum minus?
+
+                        </p>
+                    </div>
+                    <div class="item-content tab-content-2 p-3 border-dark rounded">
+                        <p>
+                            #02 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos iusto aliquid
+                            est deleniti aspernatur ab a vitae culpa, recusandae cupiditate magnam exercitationem eaque
+                            debitis voluptatem alias eveniet illum minus?
+
+                        </p>
+                    </div>
+                    <div class="item-content tab-content-3 p-3 border-dark rounded">
+                        <p>
+                            #03 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos iusto aliquid
+                            est deleniti aspernatur ab a vitae culpa, recusandae cupiditate magnam exercitationem eaque
+                            debitis voluptatem alias eveniet illum minus?
+
+                        </p>
+                    </div>
+                    <div class="item-content tab-content-4 p-3 border-dark rounded">
+                        <p>
+                            #04 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos iusto aliquid
+                            est deleniti aspernatur ab a vitae culpa, recusandae cupiditate magnam exercitationem eaque
+                            debitis voluptatem alias eveniet illum minus?
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mb30 mt30">
+                <h4>Accordion</h4>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="accordion">
+                    <div class="accordion-item selected">
+                        <div class="accordion-head">Accordion #01</div>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, odit adipisci eos
+                                tempore illo labore quis distinctio hic quod mollitia unde placeat alias dolores, ea
+                                quidem libero beatae magnam quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-head">Accordion #02</div>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, odit adipisci eos
+                                tempore illo labore quis distinctio hic quod mollitia unde placeat alias dolores, ea
+                                quidem libero beatae magnam quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item ">
+                        <div class="accordion-head">Accordion #03</div>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, odit adipisci eos
+                                tempore illo labore quis distinctio hic quod mollitia unde placeat alias dolores, ea
+                                quidem libero beatae magnam quam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mb30 mt30">
+                <h4>Wizard</h4>
+            </div>
+
+            <div class="col-lg-12">
+                <ul class="wizard">
+                    <li  class="selected">
+                        <span>1</span>
+                        <p>Adım 1 Açıklama</p>
+                    </li>
+                    <li class="active">
+                        <span>2</span>
+                        <p>Adım 2 Açıklama</p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>Adım 3 Açıklama</p>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <p>Adım 4 Açıklama</p>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <p>Adım 5 Açıklama</p>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- $ $ $ Script $ $ $ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Main -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="datepicker"]').datepicker({
+                autoHide: 'true'
+            });
+
+
+            $('[data-toggle="popover"]').popover();
+
+            $('.otherDrop').on('click', function () {
+                $('.dropdownMenu').toggleClass('show');
+            });
+
+            $("*").click(function (event) {
+                if (!$(event.target).is(".otherDrop") && !$(event.target).is(".dropdownMenu") && !$(
+                        event.target).is(".dropdownMenu *")) {
+                    $('.dropdownMenu').removeClass('show');
+                }
+            });
+
+            $('.timePicker').timepicker();
+
+            $('.accordion-item .accordion-head').on('click', function () {
+                $('.accordion-item').removeClass('selected');
+                $(this).parent().addClass('selected');
+            })
+
+            // Pass single element
+            var choices = new Choices(".js-choice", {
+                removeItems: true,
+                removeItemButton: true
+            });
+            var choices = new Choices(".js-choice2", {
+                removeItems: true,
+                removeItemButton: true
+            });
+
+            $('.tab-content .item-content').hide();
+            $('.tab-content .item-content').first().show();
+           
+
+            $('.tab-divider li a').on('click', function(e) {
+                e.preventDefault();
+                $('.tab-divider li').removeClass('active');
+                $(this).parent().addClass('active');
+                var sel = this.getAttribute('data-toggle-target');
+                $('.item-content').hide().filter(sel).show();
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
