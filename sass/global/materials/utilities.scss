@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+.text-primary{color: $primary-color!important;}
+.text-secondary{color: $secondary-color!important;}
+.text-orange{color: $warning-color!important;}
+.text-danger{color: $danger-color!important;}
+.text-success{color: $success-color!important;}
+.text-dark{color: $dark-color!important;}
+.text-light{color: $light-color!important;}
+
+
+.bg-primary{background-color: $primary-color!important;}
+.bg-secondary{background-color: $secondary-color!important;}
+.bg-orange{background-color: $warning-color!important;}
+.bg-danger{background-color: $danger-color!important;}
+.bg-success{background-color: $success-color!important;}
+.bg-dark{background-color: $dark-color!important;}
+.bg-light{background-color: $light-color!important;}
+
+
+.border-primary{border:1px solid $primary-color!important;}
+.border-secondary{border:1px solid $secondary-color!important;}
+.border-orange{border:1px solid $warning-color!important;}
+.border-danger{border:1px solid $danger-color!important;}
+.border-success{border:1px solid $success-color!important;}
+.border-dark{border:1px solid $dark-color!important;}
+.border-light{border:1px solid $light-color!important;}
+
+
+.button-primary{background-color: $primary-color!important;color: #fff!important;border:1px solid $primary-color!important;}
+.button-secondary{background-color: $secondary-color!important;color: #fff!important;border:1px solid $secondary-color!important;}
+.button-orange{background-color: $warning-color!important;color: #fff!important;border:1px solid $warning-color!important;}
+.button-danger{background-color: $danger-color!important;color: #fff!important;border:1px solid $danger-color!important;}
+.button-success{background-color: $success-color!important;color: #fff!important;border:1px solid $success-color!important;}
+.button-dark{background-color: $dark-color!important;color: #fff!important;border:1px solid $dark-color!important;}
+.button-light{background-color: $light-color!important;color: #000!important;border:1px solid $dark-color!important;}
+
+
+.text-color{color: #95A3BC;}
+
+.button-lg{
+  padding: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i{
+    font-size: 18px;
+  }
+  
+}
+.button-md{
+  padding: 0 6px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i{
+    font-size: 18px;
+  }
+  
+}
+.button-xs{
+  padding: 0 6px;
+  width: inherit;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  i{
+    font-size: 12px;
+  }
+}
+
+
+.filter-button{
+  display: flex;
+  &.selected{
+    background-color: $warning-color!important;
+    border-color: $warning-color!important;
+  }
+  .num{
+    background-color: #fff;
+    color: $warning-color;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.w-10{width: 10%!important;}
+.w-20{width: 20%!important;}
+.w-30{width: 30%!important;}
+.w-40{width: 40%!important;}
+.w-50{width: 50%!important;}
+.w-60{width: 60%!important;}
+.w-70{width: 70%!important;}
+.w-80{width: 80%!important;}
+.w-90{width: 90%!important;}
+.w-100{width: 100%!important;}
+
+
+// Margin- Padding
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100);
+$sides: (top, bottom, left, right); 
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p#{str-slice($side, 0, 1)}#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+.mlauto{margin-left: auto!important;}
+.mrauto{margin-right: auto!important;}
+// Margin- Padding End
+
+
+// Paragraf line clamp
+%pg3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow:hidden;
+  }
+  
+  
+  @each $num in '3' '4' '5' {
+    .pg-#{$num} {
+      display: -webkit-box;
+      -webkit-line-clamp: #{$num};
+      -webkit-box-orient: vertical;  
+      overflow:hidden;
+    }
+  }
+  // Paragraf line clamp End
+
+
+
+
+
+

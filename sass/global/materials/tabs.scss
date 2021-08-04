@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+.tab-divider{
+    display: inline-flex;
+    border:.5px solid rgba($color: #BFBFBF, $alpha: .3);
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    @include max992{
+        flex-wrap: wrap;
+    }
+    &.rounded{
+        border: none;
+        li{
+            &:first-child{
+                a{
+                 border-radius: 5px 0 0 5px;
+                 padding-left: 25px;
+                }
+             }
+             &:last-child{
+                 border-right: none;
+                 a{
+                  border-radius: 0 5px 5px 0;
+                  padding-right: 25px;
+                 }
+              }
+        }
+    }
+    li{
+        border-right:1px solid rgba($color: #BFBFBF, $alpha: .3);
+        @include max992{
+            width: 50%;
+        }
+        &.active{
+           a{
+            background-color: $warning-color;
+            color: #fff;
+            i{
+                &:before{
+                    color: #fff;
+                }
+            }
+           }
+        }
+        &:first-child{
+           a{
+            border-radius: 14px 0 0 14px;
+            padding-left: 25px;
+           }
+        }
+        &:last-child{
+            border-right: none;
+            a{
+             border-radius: 0 14px 14px 0;
+             padding-right: 25px;
+            }
+         }
+        a{
+            padding: 12px 15px;
+            font-size: 14px;
+            line-height: 16px;
+            color: $primary-color;
+            font-weight: 600;
+            display: block;
+        }
+        i{
+            margin-right: 5px;
+            &::before{
+                color: $primary-color;
+            }
+        }
+        .dropdown{
+            padding-left: 10px;
+            .dropdown-toggle{
+                font-weight: 300;
+                display: flex;
+                height: 40px;
+                align-items: center;
+                justify-content:center;
+                color: $primary-color;
+                font-size: 10px;
+
+                &::after{
+                    display: none;
+                }
+            }
+            .dropdown-menu{
+                transform: translate3d(0px, 45px, 0px)!important;
+                left: inherit!important;
+                right: 0!important;
+                width: 178px;
+                background: #fff;
+                border: none;
+                padding: 0;
+                filter: drop-shadow(0px 12px 33px rgba(0, 0, 0, 0.16));
+                
+                a{
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $primary-color;
+                    font-weight: 600;
+                    display: block;
+
+
+                    border-radius: 0!important;
+                    border-bottom: 1px solid rgba($color: $primary-color, $alpha: .2);
+                    font-size: 14px;
+                    &:last-child{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tab-pills{
+    display: flex;
+    flex: 1;
+    padding: 0 20px 0 0px;
+    overflow-y:auto;
+    margin-right: 20px;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 1px;
+        height: 5px;
+        cursor: pointer;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        cursor: pointer;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background:$primary-gradient;
+        cursor: pointer;
+        
+    }
+    
+    li{
+        margin-right: 5px;
+        position: relative;
+        &:hover{
+            .nb-close{
+                visibility: visible;
+                opacity: 1;
+                right: 10px;
+            }
+        }
+        
+        &.active{
+            a{
+                background: $primary-gradient;
+                color: #fff;
+            }
+
+            .nb-close{
+                color: #fff;
+            }
+        }
+        .nb-close{
+            position: absolute;
+            right: -10px;
+            top:22px;
+            font-size: 9px;
+            color: #577BBA;
+            cursor: pointer;
+            transition: $eio;
+            visibility: hidden;
+            opacity: 0;
+            @include max992{
+                visibility: visible;
+                opacity: 1;
+                right: 10px;
+            }
+        }
+        a{
+            height: 40px;
+            margin-top: 6px;
+            width: 189px;
+            padding: 2px 15px 0;
+            border-radius: 16px 16px 0px 0px;
+            background: #fff;
+            font-size: 12px;
+            letter-spacing: 1.2px;
+            color: #577BBA;
+            font-weight: 600;
+            text-transform: uppercase;
+            @extend %flexCenter;
+            box-shadow: 0px -5px 5px rgba(85, 136, 235, 0.1);
+            @include max992{
+                width: 160px;
+                font-size: 10px;
+                text-align: left;
+                padding: 2px 15px 0 0;
+            }
+
+        }
+    }
+}

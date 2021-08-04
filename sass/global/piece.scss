@@ -1,0 +1,163 @@
+@charset "UTF-8";
+// Hamburger Menu
+.menu-trigger {
+    position: relative;
+    z-index: 10;
+    width: 30px;
+    height: 22px;
+    display: inline-block;
+    transition: all .4s;
+    cursor: pointer;
+    box-sizing: border-box;
+    transform: scale(.8);
+
+    span {
+        display: inline-block;
+        transition: all .4s ease-in-out;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $warning-color;
+        border-radius: 2px;
+
+        &:nth-of-type(1) {
+            top: 0;
+        }
+
+        &:nth-of-type(2) {
+            top: 10px;
+        }
+
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
+
+    &.active {
+        transform: rotate(90deg) scale(.8);
+        span {
+            // &:nth-of-type(1) {
+            //     -webkit-transform: translateY(12px) rotate(-315deg);
+            //     transform: translateY(12px) rotate(-315deg);
+            // }
+
+            // &:nth-of-type(2) {
+            //     opacity: 0;
+            // }
+
+            // &:nth-of-type(3) {
+            //     -webkit-transform: translateY(-7px) rotate(315deg);
+            //     transform: translateY(-7px) rotate(315deg);
+            // }
+        }
+    }
+}
+// Hamburger Menu End
+
+
+
+// Dropdown
+.dropdown-global{
+    display: table;
+    // use '.drop-left' to align to the left
+    &.disabled{
+        
+        .dropdown-toggle{
+            cursor:  not-allowed;
+            background-color: #ddd!important;
+            border-color: #ddd!important;
+            &:hover{
+                box-shadow:inherit!important;
+                transform: translate(0px, 0px) scale(1)!important;
+            }
+        }
+    }
+    &.drop-left{
+        left: 0!important;
+        right: inherit!important;
+        .dropdown-menu{
+            transform: translate3d(0px, 50px, 0px)!important;
+            &::before{
+                right: inherit;
+                left: 18px;
+            }
+        }
+    }
+    a{
+        display: block;
+    }
+    .dropdown-toggle{
+
+        &::after{
+            display: none;
+        }
+    }
+
+    .dropdown-menu{
+        min-width: 250px;
+            transform: translate3d(20px, 30px, 0px)!important;
+            left: inherit!important;
+            right: 0!important;
+            width: 178px;
+            border-radius: 0;
+            background: #fff;
+            border: none;
+            padding: 20px;
+            filter: drop-shadow(0px 12px 33px rgba(0, 0, 0, 0.16));
+            &::before{
+                content: "";
+                width: 0;
+                height: 0;
+                border-width:10px;
+                border-style: solid;
+                position: absolute;
+                right: 18px;
+                top: -20px;
+                border-color: transparent transparent #fff transparent;
+            }
+            a{
+                padding: 10px 0;
+                white-space: inherit;
+                display: flex;
+                line-height: 15px;
+                align-items: center;
+                color: $primary-color;
+                border-bottom: 1px solid #95A3BC!important;
+                transition: $eio;
+                &:hover{
+                    background-color: transparent;
+                    p{
+                        color: $warning-color;
+                        font-weight: 500;
+                        
+                    };
+                    i{
+                        color: $warning-color;
+                    }
+                }
+                p{
+                    margin: 0;
+                    color: $primary-color;
+                    font-size: 13px;
+                    line-height: 15px;
+                    transition: $eio;
+                }
+                i{
+                    margin-right: 15px;
+                    transition: $eio;
+                }
+            }
+    }
+    
+}
+
+.dropdown-menu{
+    border-radius: 15px!important;
+}
+// Dropdown End
+
+
+
+

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+// ##########################
+
+// Transtion
+$all:all .2s linear;
+$eio:all ease-in-out 300ms;
+// Transtion End
+
+// Font 
+$font01:'Roboto', sans-serif;
+// Font  End
+
+// Fixed Start 
+%fullPage {
+  height: 100%;
+  width: 100%;
+}
+
+%ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+// Fixed Start  End
+
+
+// Box Location
+%flexLeftUp{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+%flexLeftCenter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+%flexLeftDown{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+%flexUpcenter{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+%flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flexDownCenter{
+  display: flex;
+  justify-content: flex;
+  align-items: flex-end;
+}
+%flexRightUp{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+%flexRightCenter{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+%flexRightDown{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+// Box Location End
+
+
+.hover01 {
+  // box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+  transition: $eio;
+
+  &:hover {
+      box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+      transform: translate(0px, -4px) scale(1.01);
+  }
+}
+
+.hover02 {
+  // box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+  transition: $eio;
+
+  &:hover {
+      box-shadow: 0px 17px 30px -8px rgba(0, 0, 0, 0.2);
+      transform: translate(0px, -1px) scale(1.02);
+  }
+}
+
+
+
+
+
+

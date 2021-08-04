@@ -1,0 +1,134 @@
+.social-services{
+    .select-style{
+        select{
+            color: $secondary-color;
+            
+            font-weight: 500;
+            font-size: 14px;
+            height: 35px;
+            -moz-appearance:none; /* Firefox */
+            -webkit-appearance:none; /* Safari and Chrome */
+            appearance:none;
+            background:$primary-color-100 url('../images/materials/small-down-blue.svg') no-repeat right ;
+            background-position: calc(100% - 10px);
+            background-size: 10px;
+        }
+    }
+
+    .box{
+        border: 1px solid $secondary-color-500;
+        padding:20px 12px;
+        border-radius: 10px;
+        height: 100%;
+        .content{
+            padding: 0 10px;
+        }
+        .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-12{
+            padding: 0 5px;
+        }
+    }
+
+    table{
+        width: 100%;
+        th{
+            font-weight: 300;
+            font-size: 11px;
+            color: #95A3BC;
+        }
+        td{
+            font-size:12px;
+            font-weight: 600;
+        }
+    }
+
+    .form-content{
+        height: calc(100vh - 180px)!important;
+    }
+
+    .checkbox{
+        span{
+            font-weight: 300!important;
+            font-size: 10px!important;
+        }
+    }
+}
+
+
+.user-list{
+    max-height: calc(100vh - 230px);
+    overflow-x: auto;
+    padding: 5px;
+    .item{
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        padding: 20px 0px 0;
+        position: relative;
+        
+        &.selected{
+            border: 2px dashed $warning-color;
+            background-color: $secondary-color-100;
+        }
+        &.active{
+            border: 2px dashed $warning-color;
+            border-right:0 ;
+            &::after{
+                content: "";
+                position: absolute;
+                right: -2px;
+                top: -2px;
+                width: 8px;
+                height: calc(100% + 4px);
+                background-color: $primary-color;
+                display: block;
+            }
+        }
+    }
+
+    
+
+    
+}
+
+.accordion{
+    border: 1px solid $secondary-color-500;
+        border-radius: 10px;
+        overflow: hidden;
+    .accordion-item{
+        
+        &.selected{
+            .accordion-head{
+                background-color: #fff;
+            }
+            .accordion-content{
+                display: block;
+            }
+        }
+        .accordion-head{
+            background-color: $secondary-color-200;
+            padding:20px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: $primary-color;
+            border-bottom: 1px solid rgba($color: #A2A2A2, $alpha: .4);
+            cursor: pointer;
+        }
+        .accordion-content{
+            padding:20px 12px;
+            display: none;
+            table{
+                width: 100%;
+                td, th{
+                    line-height: 30px;
+                    font-size: 12px;
+                    &:last-child{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

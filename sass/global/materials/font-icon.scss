@@ -1,0 +1,403 @@
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mud19e');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mud19e#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mud19e') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mud19e') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?mud19e##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nb-delete {
+  &:before {
+    content: $nb-delete; 
+  }
+}
+.nb-user {
+  &:before {
+    content: $nb-user;     
+    color: #000;
+  }
+}
+.nb-info {
+  &:before {
+    content: $nb-info;     
+    color: #96e7ff;
+  }
+}
+.nb-camera {
+  &:before {
+    content: $nb-camera;     
+    color: #fff;
+  }
+}
+.nb-customer {
+  &:before {
+    content: $nb-customer; 
+  }
+}
+.nb-user-md {
+  &:before {
+    content: $nb-user-md;     
+    color: #000;
+  }
+}
+.nb-doc {
+  &:before {
+    content: $nb-doc;     
+    color: #000;
+  }
+}
+.nb-address {
+  &:before {
+    content: $nb-address;     
+    color: #000;
+  }
+}
+.nb-test {
+  &:before {
+    content: $nb-test;     
+    color: #000;
+  }
+}
+.nb-bildirim {
+  &:before {
+    content: $nb-bildirim; 
+  }
+}
+.nb-bisar-gis {
+  &:before {
+    content: $nb-bisar-gis; 
+  }
+}
+.nb-bussines-men {
+  &:before {
+    content: $nb-bussines-men; 
+  }
+}
+.nb-calendar {
+  &:before {
+    content: $nb-calendar; 
+  }
+}
+.nb-card {
+  &:before {
+    content: $nb-card; 
+  }
+}
+.nb-circle-close {
+  &:before {
+    content: $nb-circle-close; 
+  }
+}
+.nb-close {
+  &:before {
+    content: $nb-close; 
+  }
+}
+.nb-depo-yonetimi {
+  &:before {
+    content: $nb-depo-yonetimi; 
+  }
+}
+.nb-dosya {
+  &:before {
+    content: $nb-dosya; 
+  }
+}
+.nb-e-devlet {
+  &:before {
+    content: $nb-e-devlet; 
+  }
+}
+.nb-excel-file {
+  &:before {
+    content: $nb-excel-file; 
+  }
+}
+.nb-filtreler {
+  &:before {
+    content: $nb-filtreler; 
+  }
+}
+.nb-gelirler {
+  &:before {
+    content: $nb-gelirler; 
+  }
+}
+.nb-help {
+  &:before {
+    content: $nb-help; 
+  }
+}
+.nb-history {
+  &:before {
+    content: $nb-history; 
+  }
+}
+.nb-small-down {
+  &:before {
+    content: $nb-small-down; 
+  }
+}
+.nb-setting {
+  &:before {
+    content: $nb-setting; 
+  }
+}
+.nb-icon-search {
+  &:before {
+    content: $nb-icon-search; 
+  }
+}
+.nb-insan-kaynaklari {
+  &:before {
+    content: $nb-insan-kaynaklari; 
+  }
+}
+.nb-kategoriler {
+  &:before {
+    content: $nb-kategoriler; 
+  }
+}
+.nb-kilit {
+  &:before {
+    content: $nb-kilit; 
+  }
+}
+.nb-kullanici-islemleri {
+  &:before {
+    content: $nb-kullanici-islemleri; 
+  }
+}
+.nb-kys {
+  &:before {
+    content: $nb-kys; 
+  }
+}
+.nb-makine {
+  &:before {
+    content: $nb-makine; 
+  }
+}
+.nb-mali-hizmetler {
+  &:before {
+    content: $nb-mali-hizmetler; 
+  }
+}
+.nb-muhattab {
+  &:before {
+    content: $nb-muhattab; 
+  }
+}
+.nb-nikah {
+  &:before {
+    content: $nb-nikah; 
+  }
+}
+.nb-ortak-kavramlar {
+  &:before {
+    content: $nb-ortak-kavramlar; 
+  }
+}
+.nb-pazaryeri {
+  &:before {
+    content: $nb-pazaryeri; 
+  }
+}
+.nb-pdf-file {
+  &:before {
+    content: $nb-pdf-file; 
+  }
+}
+.nb-plus {
+  &:before {
+    content: $nb-plus; 
+  }
+}
+.nb-ruhsat {
+  &:before {
+    content: $nb-ruhsat; 
+  }
+}
+.nb-satin-alma {
+  &:before {
+    content: $nb-satin-alma; 
+  }
+}
+.nb-sistem {
+  &:before {
+    content: $nb-sistem; 
+  }
+}
+.nb-sosyal-yardim {
+  &:before {
+    content: $nb-sosyal-yardim; 
+  }
+}
+.nb-sozlesme {
+  &:before {
+    content: $nb-sozlesme; 
+  }
+}
+.nb-star {
+  &:before {
+    content: $nb-star; 
+  }
+}
+.nb-strateji {
+  &:before {
+    content: $nb-strateji; 
+  }
+}
+.nb-sunucu {
+  &:before {
+    content: $nb-sunucu; 
+  }
+}
+.nb-tasinmaz {
+  &:before {
+    content: $nb-tasinmaz; 
+  }
+}
+.nb-teacher {
+  &:before {
+    content: $nb-teacher; 
+  }
+}
+.nb-sea {
+  &:before {
+    content: $nb-sea; 
+  }
+}
+.nb-tick {
+  &:before {
+    content: $nb-tick; 
+  }
+}
+.nb-yazi-isleri {
+  &:before {
+    content: $nb-yazi-isleri; 
+  }
+}
+.nb-zabita {
+  &:before {
+    content: $nb-zabita; 
+  }
+}
+.nb-beyan-donemi {
+  &:before {
+    content: $nb-beyan-donemi; 
+  }
+}
+.nb-beyan-duzeltme {
+  &:before {
+    content: $nb-beyan-duzeltme; 
+  }
+}
+.nb-beyan-hesap-yili {
+  &:before {
+    content: $nb-beyan-hesap-yili; 
+  }
+}
+.nb-beyan-hesaplama {
+  &:before {
+    content: $nb-beyan-hesaplama; 
+  }
+}
+.nb-beyan-hesaplari {
+  &:before {
+    content: $nb-beyan-hesaplari; 
+  }
+}
+.nb-beyan-islemleri {
+  &:before {
+    content: $nb-beyan-islemleri; 
+  }
+}
+.nb-cikti-islemleri {
+  &:before {
+    content: $nb-cikti-islemleri; 
+  }
+}
+.nb-kisitlilik-kaldirma {
+  &:before {
+    content: $nb-kisitlilik-kaldirma; 
+  }
+}
+.nb-muafiyet {
+  &:before {
+    content: $nb-muafiyet; 
+  }
+}
+.nb-tahakkuk-gecikme-faizi {
+  &:before {
+    content: $nb-tahakkuk-gecikme-faizi; 
+  }
+}
+.nb-tahakkuk-islemleri {
+  &:before {
+    content: $nb-tahakkuk-islemleri; 
+  }
+}
+.nb-tahakkuk-listesi {
+  &:before {
+    content: $nb-tahakkuk-listesi; 
+  }
+}
+.nb-tahakkuk-olusturma {
+  &:before {
+    content: $nb-tahakkuk-olusturma; 
+  }
+}
+.nb-dosya-bos {
+  &:before {
+    content: $nb-dosya-bos; 
+  }
+}
+.nb-down-arrow {
+  &:before {
+    content: $nb-down-arrow; 
+  }
+}
+.nb-edit {
+  &:before {
+    content: $nb-edit;     
+    color: #435da3;
+  }
+}
+.nb-left-arrow {
+  &:before {
+    content: $nb-left-arrow; 
+  }
+}
+.nb-right-arrow {
+  &:before {
+    content: $nb-right-arrow; 
+  }
+}
+.nb-up-arrow {
+  &:before {
+    content: $nb-up-arrow; 
+  }
+}
+

@@ -1,0 +1,251 @@
+header{
+    display: flex;
+    min-height: 46px;
+    align-items: center;
+    @include max992{
+        flex-wrap: wrap;
+    }
+    
+    .header-right{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        @include max992{
+            order: -1;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        .actions{
+            display: flex;
+            li{
+                margin-right: 20px;
+                .dropdown{
+                    .dropdown-toggle{
+
+                        &::after{
+                            display: none;
+                        }
+                    }
+
+                    .dropdown-menu{
+                        min-width: 250px;
+                            transform: translate3d(20px, 30px, 0px)!important;
+                            left: inherit!important;
+                            right: 0!important;
+                            width: 178px;
+                            border-radius: 0;
+                            background: #fff;
+                            border: none;
+                            padding: 20px;
+                            filter: drop-shadow(0px 12px 33px rgba(0, 0, 0, 0.16));
+                            &::before{
+                                content: "";
+                                width: 0;
+                                height: 0;
+                                border-width:10px;
+                                border-style: solid;
+                                position: absolute;
+                                right: 18px;
+                                top: -20px;
+                                border-color: transparent transparent #fff transparent;
+                            }
+                            &.bell{
+                                a{
+                                    &:hover{
+                                        background-color: transparent;
+                                        p{
+                                            color: $primary-color;
+                                            font-weight: 600;
+                                            
+                                        };
+                                        i{
+                                            color: $warning-color;
+                                        }
+                                    }
+                                }
+                            }
+                            &.income{
+                                a{
+                                   p, i{
+                                    color: $primary-color;
+                                   }
+                                    
+                                }
+                            }
+                            .help-search{
+                                display: flex;
+                                border: none;
+                                margin-bottom: 30px;
+                                input{
+                                    border: none;
+                                    width: 100%;
+                                    color: $primary-color;
+                                    font-size: 12px;
+                                    &::placeholder{
+                                        color: $primary-color;
+                                        font-size: 12px;
+                                    }
+                                }
+                                button{
+                                    color: $warning-color;
+                                    background: transparent;
+                                    border: none;
+                                }
+                            }
+                            a{
+                                padding: 10px 0;
+                                white-space: inherit;
+                                display: flex;
+                                line-height: 15px;
+                                align-items: center;
+                                color: #95A3BC;
+                                border-bottom: 1px solid #95A3BC!important;
+                                transition: $eio;
+                                &:hover{
+                                    background-color: transparent;
+                                    p{
+                                        color: $warning-color;
+                                        font-weight: 500;
+                                        
+                                    };
+                                    i{
+                                        color: $warning-color;
+                                    }
+                                }
+                                p{
+                                    margin: 0;
+                                    color: #95A3BC;
+                                    font-size: 13px;
+                                    line-height: 15px;
+                                    transition: $eio;
+                                }
+                                i{
+                                    margin-right: 15px;
+                                    transition: $eio;
+                                }
+                            }
+                    }
+                    
+                }
+                a{
+                    color: $primary-color;
+                    position: relative;
+                    small{
+                        position: absolute;
+                        top: -4px;
+                        right:-4px;
+                        width: 12px;
+                        height: 12px;
+                        background-color: $danger-color;
+                        z-index: 1;
+                        color: #fff;
+                        font-size: 10px;
+                        font-family: $font01;
+                        border-radius: 50%;
+                        @extend %flexCenter;
+                    }
+                }
+            }
+        }
+
+        .user-drop{
+            width: 60px;
+            margin:0 35px 0 10px;
+            .dropdown-toggle{
+                font-size: 14px;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $primary-color;
+
+                &::after{
+                    font-family: '#{$icomoon-font-family}' !important;
+                    content: "\e90f";
+                    border: none;
+                    position: absolute;
+                    font-size: 8px;
+                    right: 0px;
+                    width: 10px;
+                height: 10px;
+                }
+            }
+        }
+
+        .avatar{
+            display: flex;
+            align-items: center;
+            
+            img{
+                width: 30px;
+                height: 30px;
+                
+                margin-left: 10px;
+                margin-right: 5px;
+                border-radius: 50%;
+            }
+            span{
+                color: $primary-color;
+                font-weight: 600;
+                display: block;
+                @include max992{
+                    display: none;
+                }
+            }
+            &::after{
+                display: none;
+            }
+
+            & + .dropdown-menu{
+                width: 200px!important;
+                min-width: 200px!important;
+                    padding: 20px;
+                filter: drop-shadow(0px 12px 33px rgba(0, 0, 0, 0.16));
+                transform: translate3d(6px, 40px, 0px) !important;
+                border: none;
+                left: inherit!important;
+                right: 0!important;
+                &::before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-width:10px;
+                    border-style: solid;
+                    position: absolute;
+                    right: 18px;
+                    top: -20px;
+                    border-color: transparent transparent #fff transparent;
+                }
+                a{
+                    padding: 10px 0;
+                    white-space: inherit;
+                    display: flex;
+                    line-height: 15px;
+                    align-items: center;
+                    color: $primary-color;
+                    border-bottom: 1px solid $primary-color !important;
+                    transition: all ease-in-out 300ms;
+                    &:hover{
+                        background-color: transparent;
+                        p{
+                            color: $warning-color;
+                            font-weight: 500;
+                            
+                        };
+                        i{
+                            color: $warning-color;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 13px;
+                        color: $primary-color;
+                        line-height: 15px;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+        }
+    }
+}
